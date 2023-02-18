@@ -1,9 +1,13 @@
 import Button from "@/components/base/Button";
 
+import Input from "@/components/base/Input";
+
 function Form() {
   return (
-    <form>
-      <Button title="Submit" />
+    <form className="flex flex-col w-6/12 gap-6">
+      <Input type="text" placeholder="Enter your name" />
+      <Input type="email" placeholder="Enter your email" />
+      <Button title="Submit" type="submit" />
     </form>
   );
 }
