@@ -2,6 +2,18 @@
 
 ## **Project introduce**
 
+### Clone this repo for ssh users
+
+```bash
+git clone git@github.com:AbhiramKrishnaM/openauto-tsk.git
+```
+
+### Clone this repo for https users
+
+```bash
+git clone https://github.com/react-redux-antd-es6/react.git
+```
+
 ### Install dependencies
 
 ```bash
