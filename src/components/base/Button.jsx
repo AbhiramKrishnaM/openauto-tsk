@@ -1,7 +1,6 @@
 function Button({ isLoading, title, type }) {
   return (
     <button
-      disabled
       type={type}
       className=" text-white border-2 border-light hover:bg-active hover:border-active   text-xl  rounded-full  py-3 px-10 cursor-pointer  text-center mr-2 flex items-center justify-center"
     >
