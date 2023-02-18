@@ -1,9 +1,12 @@
-import Button from "@/components/base/Button";
+import Navbar from "@/components/core/Navbar";
+import Footer from "@/components/core/Footer";
 
 function App() {
   return (
-    <div class="w-full h-screen flex items-center justify-center bg-primary">
-      <Button isLoading={true} />
+    <div class="w-full h-screen justify-center bg-primary">
+      <Navbar />
+
+      <Footer />
     </div>
   );
 }
