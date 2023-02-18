@@ -14,7 +14,7 @@ function Footer() {
         </div>
 
         {/* social links */}
-        <div className="text-light flex flex-col items-end gap-4">
+        <div className=" flex flex-col items-end gap-4">
           <Contact />
           <div id="social-links" className="flex items-center gap-7">
             <Social />
