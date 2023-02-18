@@ -1,5 +1,11 @@
+import Footer from "../core/Footer";
+
 function Info() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <Footer />
+    </div>
+  );
 }
 
 export default Info;
