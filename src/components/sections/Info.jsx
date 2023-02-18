@@ -1,5 +1,6 @@
 import Footer from "@/components/core/Footer";
 import Content from "@/components/base/Content";
+import Button from "@/components/base/Button";
 
 import OrderGuy from "@/assets/images/Order-ride.svg";
 
@@ -21,8 +22,9 @@ function Info() {
           />
         </div>
 
-        <div className="w-3/6">
+        <div className="w-3/6 flex flex-col gap-8 items-start">
           <Content content={content} />
+          <Button title="Download the mobile app" />
         </div>
       </div>
       <Footer />

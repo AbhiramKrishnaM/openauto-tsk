@@ -1,9 +1,9 @@
-function Button({ isLoading }) {
+function Button({ isLoading, title }) {
   return (
     <button
       disabled
       type="button"
-      className="w-full text-white border border-gray-700 hover:bg-active hover:border-none focus:ring-4 focus:ring-blue-300 font-medium  text-sm  py-5 rounded-3xl text-center mr-2 flex items-center justify-center"
+      className=" text-white border-2 border-light hover:bg-active hover:border-active   text-xl  rounded-full  py-3 px-10 cursor-pointer  text-center mr-2 flex items-center justify-center"
     >
       {isLoading ? (
         <div>
@@ -27,7 +27,7 @@ function Button({ isLoading }) {
           Loading...
         </div>
       ) : (
-        <div>Hello</div>
+        title
       )}
     </button>
   );
