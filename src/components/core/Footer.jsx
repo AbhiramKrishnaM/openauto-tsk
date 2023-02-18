@@ -1,11 +1,21 @@
+import { Icon } from "@iconify/react";
+
 function Footer() {
   const socialLinks = [
-    { id: 0, name: "Facebook", icon: "" },
-    { id: 1, name: "Twitter", icon: "" },
-    { id: 2, name: "Youtube", icon: "" },
-    { id: 3, name: "Linkedin", icon: "" },
-    { id: 4, name: "Instagram", icon: "" },
+    { id: 0, name: "Facebook", icon: "fa6-brands:facebook-f" },
+    { id: 1, name: "Twitter", icon: "fa6-brands:twitter" },
+    { id: 2, name: "Youtube", icon: "fa6-brands:youtube" },
+    { id: 3, name: "Linkedin", icon: "fa6-brands:linkedin" },
+    { id: 4, name: "Instagram", icon: "fa6-brands:instagram" },
   ];
+
+  const Links = socialLinks.map((link) => {
+    return (
+      <a href="/" className="text-xl">
+        <Icon icon={link.icon} />
+      </a>
+    );
+  });
 
   return (
     <footer className="w-full">
@@ -21,11 +31,17 @@ function Footer() {
         {/* social links */}
         <div className="text-light flex flex-col items-end gap-4">
           <div id="contact-details" className="flex items-center gap-7">
-            <h3 className="text-lg">+763 586 4558</h3>
-            <h3 className="text-lg">service@openauto.ca</h3>
+            <h3 className="text-lg flex items-center">
+              <Icon icon="ic:baseline-phone" class="mr-3 " />
+              +763 586 4558
+            </h3>
+            <h3 className="text-lg flex items-center">
+              <Icon icon="material-symbols:mail" class="mr-3" />
+              service@openauto.ca
+            </h3>
           </div>
-          <div id="social-links">
-            <h1>Hello</h1>
+          <div id="social-links" className="flex items-center gap-7">
+            {Links}
           </div>
         </div>
       </div>
