@@ -16,6 +16,6 @@ npm i
 
 #### Dev on port
 
-```http
+```bash
   http://localhost:3000
 ```
