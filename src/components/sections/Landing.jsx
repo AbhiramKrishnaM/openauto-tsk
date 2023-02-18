@@ -1,4 +1,6 @@
 import Content from "@/components/base/Content";
+import Form from "@/components/core/Form";
+
 import LifeAtCity from "@/assets/images/Life-at-city.svg";
 
 function Landing() {
@@ -13,6 +15,7 @@ function Landing() {
       <div className="flex items-center ">
         <div className="w-6/12 flex flex-col gap-8 items-start">
           <Content content={content} />
+          <Form />
         </div>
         <div className="w-6/12 ">
           <img

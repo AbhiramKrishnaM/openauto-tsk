@@ -9,7 +9,12 @@ function Footer() {
       <div className="border-t-4 border-gray-800 py-10 flex items-center justify-between">
         {/* icon and rights */}
         <div className="w-1/6">
-          <img id="logo" src={Logo} className="h-14  mb-2 cursor-pointer" />
+          <img
+            id="logo"
+            src={Logo}
+            alt="Open auto logo"
+            className="h-14  mb-2 cursor-pointer"
+          />
 
           <span className="text-xl text-light">
             Open Auto @ all rights reserved
