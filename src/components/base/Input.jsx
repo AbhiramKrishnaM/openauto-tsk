@@ -1,4 +1,4 @@
-function Input({ type, placeholder, required }) {
+function Input({ type, placeholder, required, onInputChange }) {
   return (
     <div>
       <input
@@ -7,6 +7,7 @@ function Input({ type, placeholder, required }) {
         className="bg-transparent text-sm w-full   block  rounded-full  py-4 pl-6 pr-24 border-2 text-white  border-gray-300    "
         placeholder={placeholder}
         required={required}
+        onChange={onInputChange}
       />
       {/* <p class="mt-2 text-sm text-red-600 ">
         <span class="font-medium">Oh, snapp!</span> Some error message.
