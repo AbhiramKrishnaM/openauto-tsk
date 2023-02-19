@@ -24,9 +24,13 @@ function Form() {
 
     event.preventDefault();
 
-    const response = await submitForm(form);
+    try {
+      const response = await submitForm(form);
+    } catch (error) {
+      setLoading(false);
+      throw new Error(error);
+    }
 
-    console.log(response);
     setLoading(false);
   }
 
