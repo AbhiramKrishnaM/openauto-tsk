@@ -13,7 +13,7 @@ function Info() {
 
   return (
     <div>
-      <div className="flex items-center gap-14">
+      <div className="flex items-center flex-col lg:flex-row gap-14">
         <div className="w-1/2 ">
           <img
             src={OrderGuy}
@@ -22,7 +22,7 @@ function Info() {
           />
         </div>
 
-        <div className="w-3/6 flex flex-col gap-8 items-start">
+        <div className="w-full lg:w-3/6 flex flex-col gap-8  lg:items-start">
           <Content content={content} />
           <Button title="Download the mobile app" />
         </div>

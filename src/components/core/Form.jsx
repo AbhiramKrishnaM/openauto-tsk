@@ -65,7 +65,7 @@ function Form() {
   }
 
   return (
-    <form className="flex flex-col w-6/12 gap-6" onSubmit={submit}>
+    <form className="flex flex-col w-full lg:w-6/12 gap-6" onSubmit={submit}>
       {showPopup && <Popup info={popup} className="z-50" />}
       <Input
         type="text"

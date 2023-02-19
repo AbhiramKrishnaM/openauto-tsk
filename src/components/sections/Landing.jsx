@@ -11,19 +11,17 @@ function Landing() {
   };
 
   return (
-    <div className=" flex flex-col justify-center">
-      <div className="flex items-center ">
-        <div className="w-6/12 flex flex-col gap-8 items-start">
-          <Content content={content} />
-          <Form />
-        </div>
-        <div className="w-6/12 ">
-          <img
-            src={LifeAtCity}
-            alt="Picture portraying life at a big city"
-            className=" w-full max-h-[700px]"
-          />
-        </div>
+    <div className="flex items-center flex-col lg:flex-row ">
+      <div className="w-full lg:w-6/12 flex flex-col gap-8 items-start">
+        <Content content={content} />
+        <Form />
+      </div>
+      <div className="w-6/12 ">
+        <img
+          src={LifeAtCity}
+          alt="Picture portraying life at a big city"
+          className=" w-full max-h-[700px]"
+        />
       </div>
     </div>
   );
