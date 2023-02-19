@@ -1,5 +1,6 @@
 import Content from "@/components/base/Content";
 import Form from "@/components/core/Form";
+import Social from "@/components/core/SocialLinks";
 
 import LifeAtCity from "@/assets/images/Life-at-city.svg";
 
@@ -16,12 +17,15 @@ function Landing() {
         <Content content={content} />
         <Form />
       </div>
-      <div className="w-6/12 ">
+      <div className="w-6/12 flex flex-col items-end">
         <img
           src={LifeAtCity}
           alt="Picture portraying life at a big city"
           className=" w-full max-h-[700px]"
         />
+        <div className="flex items-center justify-between w-full lg:w-[40%] my-10">
+          <Social />
+        </div>
       </div>
     </div>
   );

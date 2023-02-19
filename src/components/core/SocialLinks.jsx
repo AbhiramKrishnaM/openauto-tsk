@@ -11,7 +11,7 @@ function Social() {
 
   const Links = socialLinks.map((link) => {
     return (
-      <a href="/" className="text-xl" key={link.id}>
+      <a href="/" className="text-2xl" key={link.id}>
         <Icon icon={link.icon} className="text-light" />
       </a>
     );

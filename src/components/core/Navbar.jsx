@@ -5,7 +5,7 @@ import Logo from "@/assets/images/Logo.svg";
 
 function Navbar() {
   return (
-    <div className="flex   items-center lg:justify-between my-6">
+    <div className="flex   items-center lg:justify-between mt-6 mb-16">
       <img
         id="logo"
         src={Logo}
