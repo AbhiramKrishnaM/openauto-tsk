@@ -1,7 +1,7 @@
 import Contact from "@/components/core/Contact";
 import Button from "@/components/base/Button";
 
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/Logo.svg";
 
 function Navbar() {
   return (

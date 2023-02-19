@@ -1,7 +1,7 @@
-import Social from "@/components/core/Sociallinks";
+import Social from "@/components/core/SocialLinks";
 import Contact from "@/components/core/Contact";
 
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/Logo.svg";
 
 function Footer() {
   return (
